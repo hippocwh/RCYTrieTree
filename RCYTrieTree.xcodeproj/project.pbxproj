@@ -13,6 +13,9 @@
 		9C3F19AE216AE86100F3DC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F19AD216AE86100F3DC7C /* Assets.xcassets */; };
 		9C3F19B1216AE86100F3DC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F19AF216AE86100F3DC7C /* LaunchScreen.storyboard */; };
 		9C3F19B4216AE86100F3DC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F19B3216AE86100F3DC7C /* main.m */; };
+		9C3F19BD216AE94F00F3DC7C /* RCYTrieTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F19BC216AE94F00F3DC7C /* RCYTrieTreeNode.m */; };
+		9C3F19C0216AEA0D00F3DC7C /* RCYTrieTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F19BF216AEA0D00F3DC7C /* RCYTrieTree.m */; };
+		9C3F19C3216AF77300F3DC7C /* RCYPinYinSplitService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F19C2216AF77300F3DC7C /* RCYPinYinSplitService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		9C3F19B0216AE86100F3DC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3F19B2216AE86100F3DC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3F19B3216AE86100F3DC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C3F19BB216AE94F00F3DC7C /* RCYTrieTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCYTrieTreeNode.h; sourceTree = "<group>"; };
+		9C3F19BC216AE94F00F3DC7C /* RCYTrieTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCYTrieTreeNode.m; sourceTree = "<group>"; };
+		9C3F19BE216AEA0D00F3DC7C /* RCYTrieTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCYTrieTree.h; sourceTree = "<group>"; };
+		9C3F19BF216AEA0D00F3DC7C /* RCYTrieTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCYTrieTree.m; sourceTree = "<group>"; };
+		9C3F19C1216AF77300F3DC7C /* RCYPinYinSplitService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCYPinYinSplitService.h; sourceTree = "<group>"; };
+		9C3F19C2216AF77300F3DC7C /* RCYPinYinSplitService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCYPinYinSplitService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +51,8 @@
 		9C3F1998216AE85F00F3DC7C = {
 			isa = PBXGroup;
 			children = (
-				9C3F19A3216AE85F00F3DC7C /* RCYTrieTree */,
+				9C3F19BA216AE90900F3DC7C /* RCYTrieTree */,
+				9C3F19A3216AE85F00F3DC7C /* RCYTrieTreeTest */,
 				9C3F19A2216AE85F00F3DC7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +65,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C3F19A3216AE85F00F3DC7C /* RCYTrieTree */ = {
+		9C3F19A3216AE85F00F3DC7C /* RCYTrieTreeTest */ = {
 			isa = PBXGroup;
 			children = (
 				9C3F19A4216AE85F00F3DC7C /* AppDelegate.h */,
@@ -67,6 +77,19 @@
 				9C3F19AF216AE86100F3DC7C /* LaunchScreen.storyboard */,
 				9C3F19B2216AE86100F3DC7C /* Info.plist */,
 				9C3F19B3216AE86100F3DC7C /* main.m */,
+			);
+			path = RCYTrieTreeTest;
+			sourceTree = "<group>";
+		};
+		9C3F19BA216AE90900F3DC7C /* RCYTrieTree */ = {
+			isa = PBXGroup;
+			children = (
+				9C3F19BB216AE94F00F3DC7C /* RCYTrieTreeNode.h */,
+				9C3F19BC216AE94F00F3DC7C /* RCYTrieTreeNode.m */,
+				9C3F19BE216AEA0D00F3DC7C /* RCYTrieTree.h */,
+				9C3F19BF216AEA0D00F3DC7C /* RCYTrieTree.m */,
+				9C3F19C1216AF77300F3DC7C /* RCYPinYinSplitService.h */,
+				9C3F19C2216AF77300F3DC7C /* RCYPinYinSplitService.m */,
 			);
 			path = RCYTrieTree;
 			sourceTree = "<group>";
@@ -141,9 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3F19C3216AF77300F3DC7C /* RCYPinYinSplitService.m in Sources */,
+				9C3F19BD216AE94F00F3DC7C /* RCYTrieTreeNode.m in Sources */,
 				9C3F19A9216AE85F00F3DC7C /* ViewController.m in Sources */,
 				9C3F19B4216AE86100F3DC7C /* main.m in Sources */,
 				9C3F19A6216AE85F00F3DC7C /* AppDelegate.m in Sources */,
+				9C3F19C0216AEA0D00F3DC7C /* RCYTrieTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59237777VH;
-				INFOPLIST_FILE = RCYTrieTree/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RCYTrieTreeTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59237777VH;
-				INFOPLIST_FILE = RCYTrieTree/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RCYTrieTreeTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
