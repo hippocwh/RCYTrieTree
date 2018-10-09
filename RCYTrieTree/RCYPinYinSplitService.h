@@ -10,6 +10,10 @@
 
 @interface RCYPinYinSplitService : NSObject
 
+//头部不加空格
 + (void)splitPinYinWithString:(NSString *)string successBlock:(void (^)(NSArray *successArray))successBlock;
+
+//头部加空格(可以防止搜索heng会出现cheng,zheng,sheng的情况，同样的数据库存入的拼音也需要在头部添加空格)
++ (void)splitPinYinFrontAddSpaceWithString:(NSString *)string successBlock:(void (^)(NSArray *successArray))successBlock;
 
 @end

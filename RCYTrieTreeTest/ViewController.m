@@ -39,6 +39,10 @@
     [RCYPinYinSplitService splitPinYinWithString:[self.textField.text lowercaseString] successBlock:^(NSArray *successArray) {
         NSLog(@"%@", successArray);
     }];
+    
+    [RCYPinYinSplitService splitPinYinFrontAddSpaceWithString:[self.textField.text lowercaseString] successBlock:^(NSArray *successArray) {
+        NSLog(@"%@", successArray);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

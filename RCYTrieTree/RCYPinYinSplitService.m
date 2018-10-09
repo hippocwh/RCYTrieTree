@@ -25,6 +25,16 @@
     }
 }
 
++ (void)splitPinYinFrontAddSpaceWithString:(NSString *)string successBlock:(void (^)(NSArray *))successBlock {
+    RCYTrieTree *tree = [[RCYTrieTree alloc] init];
+    NSMutableArray *resultArray = [[NSMutableArray alloc] init];
+    NSString *temp = [NSString stringWithFormat:@" %@", string];
+    [self PinYinAddSpaceWithTree:tree string:temp index:1 resultArray:resultArray];
+    if (resultArray && successBlock) {
+        successBlock(resultArray);
+    }
+}
+
 //例如:xianguo -> xian guo, xian gu o, xi an guo, xi an gu o
 + (void)PinYinAddSpaceWithTree:(RCYTrieTree *)tree string:(NSString *)string index:(NSInteger)index resultArray:(NSMutableArray *)resultArray {
     NSInteger currentLength = 1;
